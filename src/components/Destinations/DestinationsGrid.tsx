@@ -37,7 +37,7 @@ export default function DestinationsGrid() {
     <section className="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
       <div className="max-w-container-max mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-headline-lg text-on-background mb-4">{t('nile.label')}</h2>
+          <h2 className="text-headline-lg text-on-background mb-4">{t('destinations.title')}</h2>
           <p className="text-body-md text-on-surface-variant max-w-xl mx-auto">
             A curated selection of Egypt&apos;s most prestigious landmarks, each offering a unique window into the past.
           </p>
