@@ -6,25 +6,26 @@ const resources = {
   en: {
     translation: {
       // Navigation
+      'nav.home': 'Home',
       'nav.destinations': 'Destinations',
       'nav.experiences': 'Experiences',
       'nav.plan': 'Plan',
       'nav.about': 'About',
       'nav.inquire': 'Inquire Now',
       'nav.brand': 'MODERN HERITAGE',
-      
+
       // Hero Section
       'hero.title': 'Timeless Discovery',
       'hero.subtitle': 'Embark on a curated journey through 5,000 years of majesty. From the silent sentinels of Giza to the vibrant pulse of the modern Nile, experience Egypt as it was meant to be seen.',
       'hero.cta': 'Begin Your Odyssey',
-      
+
       // Nile Section
       'nile.label': 'The Lifeblood of History',
       'nile.title': 'The Eternal Nile',
       'nile.p1': 'For millennia, the Nile has been more than just a river; it is the rhythmic pulse of a civilization that refused to be forgotten. To sail its waters is to witness the unfolding of time itself.',
       'nile.p2': 'Our private expeditions offer an intimate perspective of the river\'s majesty, away from the crowds, where the only sound is the gentle lapping of water against the hull of your private dahabiya.',
       'nile.cta': 'Explore River Journeys',
-      
+
       // Destinations Section
       'destinations.title': 'Featured Destinations',
       'destinations.subtitle': 'A curated selection of Egypt\'s most prestigious landmarks, each offering a unique window into the past.',
@@ -34,7 +35,7 @@ const resources = {
       'destinations.cairo.name': 'Cairo',
       'destinations.aswan.label': 'The Nubian Gem',
       'destinations.aswan.name': 'Aswan',
-      
+
       // CTA Section
       'cta.title': 'Travel Your Way',
       'cta.subtitle': 'Every traveler is unique. Whether you seek the thrill of a Red Sea dive or the quiet contemplation of a desert sunset, we craft experiences that resonate with your spirit.',
@@ -45,7 +46,7 @@ const resources = {
       'cta.feature3.title': 'Luxury Stays',
       'cta.feature3.desc': 'The finest palaces and boutique desert escapes.',
       'cta.button': 'Customize My Trip',
-      
+
       // Footer
       'footer.brand': 'MODERN HERITAGE',
       'footer.desc': 'Crafted for the timeless discovery of Egypt. Redefining luxury travel through the lens of ancient majesty.',
@@ -62,7 +63,7 @@ const resources = {
       'footer.copyright': '© 2024 Modern Heritage. All rights reserved. Crafted for the Timeless Discovery of Egypt.',
       'footer.privacy': 'Privacy Policy',
       'footer.terms': 'Terms of Service',
-      
+
       // Experiences Page
       'experiences.hero.label': 'Unveiling The Contemporary',
       'experiences.hero.title': 'Modern Experiences in an Ancient Land',
@@ -92,30 +93,95 @@ const resources = {
       'experiences.cta.title': 'Begin Your Timeless Journey',
       'experiences.cta.desc': 'Subscribe to our curated newsletter for exclusive access to new destinations and seasonal modern heritage experiences.',
       'experiences.cta.button': 'Subscribe',
+      // In the 'en' section add:
+      'destination.eternal-sands.title': 'The Eternal Sands: Cairo & The Nile',
+      'destination.eternal-sands.subtitle': 'A curated odyssey through the cradle of civilization, where the grandeur of the Pharaohs meets the whisper of the desert winds and the timeless luxury of the Nile.',
+      'destination.eternal-sands.duration': 'Duration',
+      'destination.eternal-sands.duration-value': '10 Days / 9 Nights',
+      'destination.eternal-sands.group-size': 'Group Size',
+      'destination.eternal-sands.group-size-value': 'Max 12 Guests',
+      'destination.eternal-sands.starting-from': 'Starting From',
+      'destination.eternal-sands.starting-from-value': '$8,450 pp',
+      'destination.eternal-sands.next-departure': 'Next Departure',
+      'destination.eternal-sands.next-departure-value': 'Oct 14, 2024',
+      'destination.eternal-sands.itinerary-title': 'The Sacred Sequence',
+      'destination.eternal-sands.itinerary-desc': 'Every step of this expedition is choreographed to balance historical immersion with moments of profound stillness and luxury.',
+      'destination.eternal-sands.day1-title': 'Arrival in Cairo: The Threshold',
+      'destination.eternal-sands.day1-desc': 'Touch down in the City of a Thousand Minarets. Your private concierge meets you at the bridge, whisking you away to the historic Mena House at the foot of the Giza Plateau.',
+      'destination.eternal-sands.day1-stay': 'Stay: Marriott Mena House',
+      'destination.eternal-sands.day2-title': 'Giza: Shadows of the Great Kings',
+      'destination.eternal-sands.day2-desc': 'Sunrise meditation at the Sphinx before it opens to the public. Private access to the Great Pyramid followed by a desert picnic served by white-gloved staff overlooking the dunes.',
+      'destination.eternal-sands.day2-highlight': 'Highlights: Private Sphinx Access',
+      'destination.eternal-sands.day3-title': 'The Upper Nile Odyssey',
+      'destination.eternal-sands.day3-desc': 'Days 3 through 10 continue through Luxor, the Valley of the Kings, and a private Dahabiya sail towards Aswan.',
+      'destination.eternal-sands.view-pdf': 'View Full 10-Day PDF',
+      'destination.eternal-sands.sailing-title': 'Sailing the Timeless Nile',
+      'destination.eternal-sands.sailing-quote': '"There is no luxury greater than the silence of the Nile at dusk, viewed from the deck of a private Dahabiya."',
+      'destination.eternal-sands.pricing-title': 'Select Your Sanctuary',
+      'destination.eternal-sands.pricing-desc': 'Choose the tier of immersion that suits your travel philosophy. Both tiers include our signature white-glove service and expert Egyptologists.',
+      'destination.eternal-sands.classic-title': 'Classic Heritage',
+      'destination.eternal-sands.classic-subtitle': 'The Essential Luxury',
+      'destination.eternal-sands.classic-price': '$8,450',
+      'destination.eternal-sands.classic-feature1': 'Accommodation in Premium Deluxe rooms at Marriott Mena House and Old Cataract.',
+      'destination.eternal-sands.classic-feature2': 'Standard cabin on the 5-star Signature Dahabiya Nile Cruise.',
+      'destination.eternal-sands.classic-feature3': 'Small group tours with a maximum of 12 guests.',
+      'destination.eternal-sands.classic-feature4': 'All domestic flights and luxury ground transfers.',
+      'destination.eternal-sands.classic-cta': 'Select Classic',
+      'destination.eternal-sands.royal-title': 'Royal Suite',
+      'destination.eternal-sands.royal-subtitle': 'The Ultimate Odyssey',
+      'destination.eternal-sands.royal-price': '$12,900',
+      'destination.eternal-sands.royal-feature1': 'Upgrade to Nile-View Suites at all hotel properties.',
+      'destination.eternal-sands.royal-feature2': 'Private Balcony Suite on the Dahabiya Nile Cruise.',
+      'destination.eternal-sands.royal-feature3': 'Strictly private guides for your party of two or more.',
+      'destination.eternal-sands.royal-feature4': 'Exclusive "After Hours" private entry to the Valley of the Queens.',
+      'destination.eternal-sands.royal-cta': 'Select Royal',
+      'destination.eternal-sands.inclusions-title': 'Expediture Inclusions',
+      'destination.eternal-sands.inclusion1-title': 'Cuisine',
+      'destination.eternal-sands.inclusion1-desc': 'Daily breakfast and 80% of gourmet lunches/dinners.',
+      'destination.eternal-sands.inclusion2-title': 'Logistics',
+      'destination.eternal-sands.inclusion2-desc': 'All domestic airfare (Cairo-Luxor-Aswan).',
+      'destination.eternal-sands.inclusion3-title': 'Expertise',
+      'destination.eternal-sands.inclusion3-desc': 'Certified Egyptologist guides and 24/7 concierge.',
+      'destination.eternal-sands.inclusion4-title': 'Access',
+      'destination.eternal-sands.inclusion4-desc': 'All site entry fees and special private permits.',
+      'destination.eternal-sands.exclusions-title': 'Fine Print (Exclusions)',
+      'destination.eternal-sands.exclusion1-title': 'Flights',
+      'destination.eternal-sands.exclusion1-desc': 'International round-trip airfare to Cairo.',
+      'destination.eternal-sands.exclusion2-title': 'Entry',
+      'destination.eternal-sands.exclusion2-desc': 'Egypt Entry Visa (Can be arranged on request).',
+      'destination.eternal-sands.exclusion3-title': 'Personal',
+      'destination.eternal-sands.exclusion3-desc': 'Travel insurance and discretionary gratuities.',
+      'destination.eternal-sands.exclusion4-title': 'Misc',
+      'destination.eternal-sands.exclusion4-desc': 'Optional balloon rides or camel treks.',
+      'destination.eternal-sands.cta-title': 'Secure Your Place in History',
+      'destination.eternal-sands.cta-desc': 'Our Signature Expeditions are strictly limited to 12 guests per departure to ensure an intimate and personalized heritage experience.',
+      'destination.eternal-sands.cta-button1': 'Secure Your Spot',
+      'destination.eternal-sands.cta-button2': 'Inquire for Dates',
     }
   },
   es: {
     translation: {
       // Navigation
+      'nav.home': 'Hogar',
       'nav.destinations': 'Destinos',
       'nav.experiences': 'Experiencias',
       'nav.plan': 'Planificar',
       'nav.about': 'Sobre Nosotros',
       'nav.inquire': 'Consultar Ahora',
       'nav.brand': 'HERENCIA MODERNA',
-      
+
       // Hero Section
       'hero.title': 'Descubrimiento Atemporal',
       'hero.subtitle': 'Embárquese en un viaje curado a través de 5,000 años de majestuosidad. Desde los centinelas silenciosos de Giza hasta el pulso vibrante del Nilo moderno, experimente Egipto como debe ser visto.',
       'hero.cta': 'Comience Su Odisea',
-      
+
       // Nile Section
       'nile.label': 'La Sangre de la Historia',
       'nile.title': 'El Nilo Eterno',
       'nile.p1': 'Durante milenios, el Nilo ha sido más que un río; es el pulso rítmico de una civilización que se negó a ser olvidada. Navegar por sus aguas es presenciar el desarrollo del tiempo mismo.',
       'nile.p2': 'Nuestras expediciones privadas ofrecen una perspectiva íntima de la majestuosidad del río, lejos de las multitudes, donde el único sonido es el suave chapoteo del agua contra el casco de su dahabiya privada.',
       'nile.cta': 'Explorar Viajes Fluviales',
-      
+
       // Destinations Section
       'destinations.title': 'Destinos Destacados',
       'destinations.subtitle': 'Una selección curada de los monumentos más prestigiosos de Egipto, cada uno ofreciendo una ventana única al pasado.',
@@ -125,7 +191,7 @@ const resources = {
       'destinations.cairo.name': 'El Cairo',
       'destinations.aswan.label': 'La Joya Nubia',
       'destinations.aswan.name': 'Asuán',
-      
+
       // CTA Section
       'cta.title': 'Viaje a Su Manera',
       'cta.subtitle': 'Cada viajero es único. Ya sea que busque la emoción de un buceo en el Mar Rojo o la contemplación tranquila de un atardecer en el desierto, creamos experiencias que resuenan con su espíritu.',
@@ -136,7 +202,7 @@ const resources = {
       'cta.feature3.title': 'Estancias de Lujo',
       'cta.feature3.desc': 'Los mejores palacios y escapadas boutique en el desierto.',
       'cta.button': 'Personalizar Mi Viaje',
-      
+
       // Footer
       'footer.brand': 'HERENCIA MODERNA',
       'footer.desc': 'Creado para el descubrimiento atemporal de Egipto. Redefiniendo el viaje de lujo a través de la lente de la majestuosidad antigua.',
@@ -153,7 +219,7 @@ const resources = {
       'footer.copyright': '© 2024 Herencia Moderna. Todos los derechos reservados. Creado para el Descubrimiento Atemporal de Egipto.',
       'footer.privacy': 'Política de Privacidad',
       'footer.terms': 'Términos de Servicio',
-      
+
       // Experiences Page
       'experiences.hero.label': 'Descubriendo lo Contemporáneo',
       'experiences.hero.title': 'Experiencias Modernas en una Tierra Antigua',
@@ -183,6 +249,69 @@ const resources = {
       'experiences.cta.title': 'Comience Su Viaje Atemporal',
       'experiences.cta.desc': 'Suscríbase a nuestro boletín curado para acceso exclusivo a nuevos destinos y experiencias de herencia moderna de temporada.',
       'experiences.cta.button': 'Suscribirse',
+      'destination.eternal-sands.title': 'Las Arenas Eternas: El Cairo y el Nilo',
+      'destination.eternal-sands.subtitle': 'Una odisea curada a través de la cuna de la civilización, donde la grandeza de los Faraones se encuentra con el susurro de los vientos del desierto y el lujo eterno del Nilo.',
+      'destination.eternal-sands.duration': 'Duración',
+      'destination.eternal-sands.duration-value': '10 Días / 9 Noches',
+      'destination.eternal-sands.group-size': 'Tamaño del Grupo',
+      'destination.eternal-sands.group-size-value': 'Máx. 12 Huéspedes',
+      'destination.eternal-sands.starting-from': 'Desde',
+      'destination.eternal-sands.starting-from-value': '$8,450 pp',
+      'destination.eternal-sands.next-departure': 'Próxima Salida',
+      'destination.eternal-sands.next-departure-value': '14 Oct 2024',
+      'destination.eternal-sands.itinerary-title': 'La Secuencia Sagrada',
+      'destination.eternal-sands.itinerary-desc': 'Cada paso de esta expedición está coreografiado para equilibrar la inmersión histórica con momentos de profunda quietud y lujo.',
+      'destination.eternal-sands.day1-title': 'Llegada a El Cairo: El Umbral',
+      'destination.eternal-sands.day1-desc': 'Aterrice en la Ciudad de los Mil Minaretes. Su conserje privado le recibe en el puente, llevándole al histórico Mena House, al pie de la meseta de Giza.',
+      'destination.eternal-sands.day1-stay': 'Estancia: Marriott Mena House',
+      'destination.eternal-sands.day2-title': 'Giza: Sombras de los Grandes Reyes',
+      'destination.eternal-sands.day2-desc': 'Meditación al amanecer en la Esfinge antes de que abra al público. Acceso privado a la Gran Pirámide seguido de un picnic en el desierto servido por personal con guantes blancos con vistas a las dunas.',
+      'destination.eternal-sands.day2-highlight': 'Destacados: Acceso Privado a la Esfinge',
+      'destination.eternal-sands.day3-title': 'La Odisea del Alto Nilo',
+      'destination.eternal-sands.day3-desc': 'Los días 3 al 10 continúan a través de Luxor, el Valle de los Reyes y una navegación privada en Dahabiya hacia Asuán.',
+      'destination.eternal-sands.view-pdf': 'Ver PDF Completo de 10 Días',
+      'destination.eternal-sands.sailing-title': 'Navegando el Nilo Eterno',
+      'destination.eternal-sands.sailing-quote': '"No hay lujo más grande que el silencio del Nilo al atardecer, visto desde la cubierta de una Dahabiya privada."',
+      'destination.eternal-sands.pricing-title': 'Seleccione Su Santuario',
+      'destination.eternal-sands.pricing-desc': 'Elija el nivel de inmersión que se adapte a su filosofía de viaje. Ambos niveles incluyen nuestro servicio de guante blanco y egiptólogos expertos.',
+      'destination.eternal-sands.classic-title': 'Herencia Clásica',
+      'destination.eternal-sands.classic-subtitle': 'El Lujo Esencial',
+      'destination.eternal-sands.classic-price': '$8,450',
+      'destination.eternal-sands.classic-feature1': 'Alojamiento en habitaciones Premium Deluxe en Marriott Mena House y Old Cataract.',
+      'destination.eternal-sands.classic-feature2': 'Cabinete estándar en el crucero 5 estrellas Signature Dahabiya por el Nilo.',
+      'destination.eternal-sands.classic-feature3': 'Tours en grupos pequeños con un máximo de 12 huéspedes.',
+      'destination.eternal-sands.classic-feature4': 'Todos los vuelos domésticos y traslados terrestres de lujo.',
+      'destination.eternal-sands.classic-cta': 'Seleccionar Clásico',
+      'destination.eternal-sands.royal-title': 'Suite Real',
+      'destination.eternal-sands.royal-subtitle': 'La Odisea Definitiva',
+      'destination.eternal-sands.royal-price': '$12,900',
+      'destination.eternal-sands.royal-feature1': 'Actualización a Suites con Vista al Nilo en todos los hoteles.',
+      'destination.eternal-sands.royal-feature2': 'Suite con Balcón Privado en el Crucero Dahabiya por el Nilo.',
+      'destination.eternal-sands.royal-feature3': 'Guías estrictamente privados para su grupo de dos o más.',
+      'destination.eternal-sands.royal-feature4': 'Entrada privada "Fuera de Horario" al Valle de las Reinas.',
+      'destination.eternal-sands.royal-cta': 'Seleccionar Real',
+      'destination.eternal-sands.inclusions-title': 'Inclusiones del Gasto',
+      'destination.eternal-sands.inclusion1-title': 'Gastronomía',
+      'destination.eternal-sands.inclusion1-desc': 'Desayuno diario y 80% de almuerzos/cenas gourmet.',
+      'destination.eternal-sands.inclusion2-title': 'Logística',
+      'destination.eternal-sands.inclusion2-desc': 'Todos los vuelos domésticos (El Cairo-Luxor-Asuán).',
+      'destination.eternal-sands.inclusion3-title': 'Experiencia',
+      'destination.eternal-sands.inclusion3-desc': 'Guías egiptólogos certificados y conserje 24/7.',
+      'destination.eternal-sands.inclusion4-title': 'Acceso',
+      'destination.eternal-sands.inclusion4-desc': 'Todas las tarifas de entrada a sitios y permisos privados especiales.',
+      'destination.eternal-sands.exclusions-title': 'Letra Pequeña (Exclusiones)',
+      'destination.eternal-sands.exclusion1-title': 'Vuelos',
+      'destination.eternal-sands.exclusion1-desc': 'Billetes de avión internacionales de ida y vuelta a El Cairo.',
+      'destination.eternal-sands.exclusion2-title': 'Entrada',
+      'destination.eternal-sands.exclusion2-desc': 'Visa de entrada a Egipto (se puede gestionar a petición).',
+      'destination.eternal-sands.exclusion3-title': 'Personal',
+      'destination.eternal-sands.exclusion3-desc': 'Seguro de viaje y gratificaciones discrecionales.',
+      'destination.eternal-sands.exclusion4-title': 'Misc',
+      'destination.eternal-sands.exclusion4-desc': 'Paseos opcionales en globo o paseos en camello.',
+      'destination.eternal-sands.cta-title': 'Asegure Su Lugar en la Historia',
+      'destination.eternal-sands.cta-desc': 'Nuestras Expediciones Signature están estrictamente limitadas a 12 huéspedes por salida para garantizar una experiencia de patrimonio íntima y personalizada.',
+      'destination.eternal-sands.cta-button1': 'Asegure Su Lugar',
+      'destination.eternal-sands.cta-button2': 'Consultar Fechas',
     }
   }
 }

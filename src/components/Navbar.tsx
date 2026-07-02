@@ -32,7 +32,7 @@ export default function Navbar() {
               : 'text-on-surface-variant hover:text-primary'
               }`}
           >
-            {t('nav.destinations')}
+            {t('nav.home')}
           </Link>
           <Link
             href="/experiences"
@@ -61,6 +61,15 @@ export default function Navbar() {
           >
             {t('nav.about')}
           </Link>
+          <Link
+            href="/destinations"
+            className={`text-label-lg transition-colors duration-300 ${isActive('/destinations')
+              ? 'text-primary border-b-2 border-primary-container pb-1 font-bold'
+              : 'text-on-surface-variant hover:text-primary'
+              }`}
+          >
+            {t('nav.destinations')}
+          </Link>
         </div>
 
         <LanguageDropdown />
@@ -82,31 +91,53 @@ export default function Navbar() {
             <div className="flex flex-col gap-4 p-6">
               <Link
                 href="/"
-                className="text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300"
+                className={`text-label-lg transition-colors duration-300 ${isActive('/')
+                  ? 'text-primary border-b-2 border-primary-container pb-1 font-bold'
+                  : 'text-on-surface-variant hover:text-primary'
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Destinations
+                {t('nav.home')}
               </Link>
               <Link
                 href="/experiences"
-                className="text-label-lg text-primary border-b-2 border-primary-container pb-1 font-bold"
+                className={`text-label-lg transition-colors duration-300 ${isActive('/experiences')
+                  ? 'text-primary border-b-2 border-primary-container pb-1 font-bold'
+                  : 'text-on-surface-variant hover:text-primary'
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Experiences
+                {t('nav.experiences')}
               </Link>
               <Link
                 href="/plan"
-                className="text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300"
+                className={`text-label-lg transition-colors duration-300 ${isActive('/plan')
+                  ? 'text-primary border-b-2 border-primary-container pb-1 font-bold'
+                  : 'text-on-surface-variant hover:text-primary'
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                Plan
+                {t('nav.plan')}
               </Link>
               <Link
                 href="/about"
-                className="text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300"
+                className={`text-label-lg transition-colors duration-300 ${isActive('/about')
+                  ? 'text-primary border-b-2 border-primary-container pb-1 font-bold'
+                  : 'text-on-surface-variant hover:text-primary'
+                  }`}
                 onClick={() => setIsMenuOpen(false)}
               >
-                About
+                {t('nav.about')}
+              </Link>
+              <Link
+                href="/destinations"
+                className={`text-label-lg transition-colors duration-300 ${isActive('/destinations')
+                  ? 'text-primary border-b-2 border-primary-container pb-1 font-bold'
+                  : 'text-on-surface-variant hover:text-primary'
+                  }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {t('nav.destinations')}
               </Link>
               <button className="bg-primary-container text-on-primary-container px-6 py-2 text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-200">
                 Inquire Now

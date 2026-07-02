@@ -157,6 +157,7 @@
   }
 
   .lotus-pattern {
+    opacity: 0.03;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 10-10 12-10 12s8 2 10 12c2-10 10-12 10-12s-8-2-10-12z' fill='%23d4af37' fill-opacity='0.05'/%3E%3C/svg%3E");
   }
 
@@ -166,14 +167,17 @@
 
   /* Animation utilities */
   @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateX(-50%) translateY(0);
     }
+
     50% {
       transform: translateX(-50%) translateY(-10px);
     }
   }
-  
+
   .animate-bounce {
     animation: bounce 2s infinite;
   }
@@ -184,7 +188,7 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     background-color: var(--color-surface);
     color: var(--color-on-surface);
@@ -195,6 +199,7 @@
 
 /* Custom components using Tailwind v4 syntax */
 @layer components {
+
   /* Using @apply with custom properties */
   .text-display-lg {
     font-size: var(--text-display-lg);
@@ -202,45 +207,45 @@
     letter-spacing: var(--text-display-lg--letter-spacing);
     font-weight: var(--text-display-lg--font-weight);
   }
-  
+
   .text-display-lg-mobile {
     font-size: var(--text-display-lg-mobile);
     line-height: var(--text-display-lg-mobile--line-height);
     font-weight: var(--text-display-lg-mobile--font-weight);
   }
-  
+
   .text-headline-lg {
     font-size: var(--text-headline-lg);
     line-height: var(--text-headline-lg--line-height);
     font-weight: var(--text-headline-lg--font-weight);
   }
-  
+
   .text-headline-md {
     font-size: var(--text-headline-md);
     line-height: var(--text-headline-md--line-height);
     font-weight: var(--text-headline-md--font-weight);
   }
-  
+
   .text-body-lg {
     font-size: var(--text-body-lg);
     line-height: var(--text-body-lg--line-height);
     letter-spacing: var(--text-body-lg--letter-spacing);
     font-weight: var(--text-body-lg--font-weight);
   }
-  
+
   .text-body-md {
     font-size: var(--text-body-md);
     line-height: var(--text-body-md--line-height);
     font-weight: var(--text-body-md--font-weight);
   }
-  
+
   .text-label-lg {
     font-size: var(--text-label-lg);
     line-height: var(--text-label-lg--line-height);
     letter-spacing: var(--text-label-lg--letter-spacing);
     font-weight: var(--text-label-lg--font-weight);
   }
-  
+
   .text-label-sm {
     font-size: var(--text-label-sm);
     line-height: var(--text-label-sm--line-height);
@@ -249,10 +254,10 @@
   }
 
   /* added css */
-   .text-underline-gold {
+  .text-underline-gold {
     position: relative;
   }
-  
+
   .text-underline-gold::after {
     content: '';
     position: absolute;
@@ -263,7 +268,7 @@
     background-color: var(--color-primary-container);
     transition: width 0.3s ease-in-out;
   }
-  
+
   .text-underline-gold:hover::after {
     width: 100%;
   }
@@ -273,5 +278,111 @@
     background: linear-gradient(to top, rgba(27, 29, 14, 0.8) 0%, rgba(27, 29, 14, 0) 60%);
   }
 
-  
+  .itinerary-line::before {
+    content: '';
+    position: absolute;
+    left: 19px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--color-outline-variant);
+  }
+
+  /* Lotus pattern mask */
+  .lotus-pattern {
+    mask-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10c-5 15-20 20-20 40 0 20 20 40 20 40s20-20 20-40c0-20-15-25-20-40z' fill='%23000'/%3E%3C/svg%3E");
+    mask-size: 60px;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 10c-5 15-20 20-20 40 0 20 20 40 20 40s20-20 20-40c0-20-15-25-20-40z' fill='%23000'/%3E%3C/svg%3E");
+    -webkit-mask-size: 60px;
+    opacity: 0.03;
+  }
+
+  /* Animation for fade in up */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  /* Sticky positioning helper */
+  .sticky {
+    position: sticky;
+  }
+
+  /* Loading animations */
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  @keyframes ping {
+
+    75%,
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  .animate-spin {
+    animation: spin 1s linear infinite;
+  }
+
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-ping {
+    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  .animate-bounce {
+    animation: bounce 1s infinite;
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+}
+
+@layer components {
+  .bg-cover {
+    background-size: cover;
+  }
+
+  .bg-center {
+    background-position: center;
+  }
 }

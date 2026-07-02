@@ -12,7 +12,7 @@ export default function NileSection() {
 
 
   return (
-    <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface lotus-pattern overflow-hidden">
+    <section className="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface overflow-hidden">
       <div className="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <div className="absolute -top-10 -left-10 w-40 h-40 border-t-2 border-l-2 border-primary-container opacity-30"></div>
