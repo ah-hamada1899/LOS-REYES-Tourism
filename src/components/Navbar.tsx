@@ -75,9 +75,14 @@ export default function Navbar() {
         <LanguageDropdown />
 
         <div className="flex items-center gap-4">
-          <button className="hidden md:block bg-primary-container text-on-primary-container px-6 py-2 text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-200">
-            {t('nav.inquire')}
-          </button>
+
+          <Link href="/inquire">
+            <button className={`hidden md:block px-6 py-2 text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-200 ${isActive('/inquire')
+                ? 'bg-on-primary-container text-surface'
+                : 'bg-primary-container text-on-primary-container'
+                }`}>{t('nav.inquire')}</button>
+          </Link>
+
           <button
             className="md:hidden text-primary"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -139,9 +144,13 @@ export default function Navbar() {
               >
                 {t('nav.destinations')}
               </Link>
-              <button className="bg-primary-container text-on-primary-container px-6 py-2 text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-200">
+              <Link href="/inquire"><button className={`px-6 py-2 text-label-lg uppercase tracking-widest hover:scale-105 transition-transform duration-200${isActive('/inquire')
+                ? 'text-primary border-b-2 border-primary-container'
+                : 'bg-primary-container text-on-primary-container'
+                }`}>
                 Inquire Now
               </button>
+              </Link>
             </div>
           </div>
         )}

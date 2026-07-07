@@ -5,6 +5,7 @@ import { ChevronsDown } from "lucide-react";
 import Image from "next/image";
 import hero_pyramid from "../../img/hero_pyramid.png";
 import { useTranslation } from "@/hooks/useTranslation";
+import Link from "next/link";
 
 
 
@@ -34,9 +35,9 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-        <span className="material-symbols-outlined text-white">
+        <a className="material-symbols-outlined text-white" href="#destinations">
           <ChevronsDown size={32} />
-        </span>
+        </a>
       </div>
     </section>
   )

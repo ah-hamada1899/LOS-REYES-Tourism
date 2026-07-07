@@ -10,8 +10,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@react-email/components": "^1.0.12",
+    "@react-email/render": "^2.0.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.42.2",
     "i18next": "^26.3.3",
     "lucide-react": "^1.21.0",
     "next": "^16.2.9",

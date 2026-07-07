@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { LanguageProvider } from '@/context/LanguageContext'
+import NavigationLoader from '@/components/NavigationLoader'
+
 
 export const metadata: Metadata = {
   title: 'Modern Heritage - Timeless Discovery of Egypt',
@@ -17,6 +19,7 @@ export default function RootLayout({
       <body>
 
         <LanguageProvider>
+          <NavigationLoader />
           {children}
         </LanguageProvider>
 

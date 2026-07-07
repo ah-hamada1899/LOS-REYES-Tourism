@@ -8,26 +8,7 @@ import { destinations } from '../../data/destinations'
 
 
 
-// const destinations = [
-//   {
-//     name: 'Luxor',
-//     label: "The World's Open Air Museum",
-//     image: Luxor,
-//     ditails: "/experiences"
-//   },
-//   {
-//     name: 'Cairo',
-//     label: 'Where History Meets the Future',
-//     image: Cairo,
-//     ditails: "/experiences"
-//   },
-//   {
-//     name: 'Aswan',
-//     label: 'The Nubian Gem',
-//     image: Aswan,
-//     ditails: "/experiences"
-//   }
-// ]
+
 
 export default function DestinationsGrid() {
   const { t } = useTranslation()
@@ -35,7 +16,7 @@ export default function DestinationsGrid() {
   const displayDestinations = destinations.slice(0, 6)
 
   return (
-    <section className="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop">
+    <section className="py-section-gap bg-surface-container-low px-margin-mobile md:px-margin-desktop" id="destinations">
       <div className="max-w-container-max mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-headline-lg text-on-background mb-4">{t('destinations.title')}</h2>

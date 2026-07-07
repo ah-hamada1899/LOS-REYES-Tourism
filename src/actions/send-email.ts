@@ -25,7 +25,6 @@ export async function sendEmail(formData: FormData) {
     const { data, error } = await resend.emails.send({
       from: 'onboarding@resend.dev', // You'll need to verify your domain for production
       to: ['ah.hamada1899@gmail.com'], // Where you want to receive the form submissions
-      reply_to: email,
       subject: `New Itinerary Request from ${name}`,
       html: `
         <!DOCTYPE html>
@@ -82,7 +81,6 @@ export async function sendEmail(formData: FormData) {
         const { data2, error2 } = await resend.emails.send({
       from: 'onboarding@resend.dev', // You'll need to verify your domain for production
       to: ['ah.hamada1899@gmail.com'], // Where you want to receive the form submissions
-      reply_to: email,
       subject: `sec email ${name}`,
       html: `
         <!DOCTYPE html>

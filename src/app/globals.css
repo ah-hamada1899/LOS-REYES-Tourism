@@ -375,6 +375,63 @@
     }
   }
 
+  /* Shimmer animation for progress bar */
+  @keyframes shimmer {
+    0% {
+      background-position: 200% 0;
+    }
+
+    100% {
+      background-position: -200% 0;
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+
+  /* Enhanced loading spinner */
+  @keyframes spin-slow {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 2s linear infinite;
+  }
+
+  /* Pulsing text for loading */
+  @keyframes pulse-text {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+  .animate-pulse-text {
+    animation: pulse-text 1.5s ease-in-out infinite;
+  }
+  
+  /* Glass effect */
+    .bg-glass {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  /* Pattern overlay for background */
+  .pattern-overlay {
+    background-image: radial-gradient(#d0c5af 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.1;
+  }
+
+
 }
 
 @layer components {
